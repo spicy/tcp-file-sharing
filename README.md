@@ -1,12 +1,13 @@
-# CPSC-471 Programming Assignment
+# TCP File Sharing
 
-## Team Members: 
+A simple Python-based TCP client-server file sharing application that allows users to upload, download, and list files between a client and server over a TCP connection.
 
-- Kyle Lee - ipark604@csu.fullerton.edu
-- Daniel Currey - dcurrey@csu.fullerton.edu
-- Brett Chiu - brettc@csu.fullerton.edu
-- Luke Pina - lukepina@csu.fullerton.edu
-- Jonathan Gaytan - jagaytan@csu.fullerton.edu
+## Features
+
+- **File Transfer**: Upload (`put`) and download (`get`) files between the client and server.
+- **File Listing**: List available files on the server.
+- **Multi-client Support**: Supports multiple clients connected to the server.
+- **TCP Connection**: Communication is handled via TCP sockets.
 
 ## Programming Language Used:
 
@@ -64,8 +65,17 @@ ftp> quit
 
 Client quits the server by closing the control connection between the client and server.
 
-## Anything Special About Submission:
+## Misc
 
 - Has unit tests using .txt files in order to reinforce data partitioning, three for client unit test, five for server unit test
 - Running the `client.py` and `server.py` files will require being in the same directory where the `files` folder is located in order to properly download and upload files
 - Requires Python 3.9.6 or greater
+
+
+## Team Members: 
+
+- Daniel Currey - dcurrey@csu.fullerton.edu
+- Kyle Lee - ipark604@csu.fullerton.edu
+- Brett Chiu - brettc@csu.fullerton.edu
+- Luke Pina - lukepina@csu.fullerton.edu
+- Jonathan Gaytan - jagaytan@csu.fullerton.edu
